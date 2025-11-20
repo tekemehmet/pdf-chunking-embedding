@@ -25,7 +25,7 @@ Currently powers an upcoming **Adaptive AI Quiz Generator** that creates persona
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/adaptive-ai-quiz-vector.git
+git clone https://github.com/yourusername/pdf-chunking-embedding
 cd adaptive-ai-quiz-vector
 python -m venv venv
 source venv/bin/activate    # Windows: venv\Scripts\activate
