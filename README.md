@@ -33,9 +33,9 @@ pip install -r requirements.txt
 ```
 
 ### 2. Run the API
-
+```
 uvicorn main:app --reload
-
+```
 Server will be live at → http://127.0.0.1:8000
 Interactive docs → http://127.0.0.1:8000/docs
 
