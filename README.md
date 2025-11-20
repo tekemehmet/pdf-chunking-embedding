@@ -30,3 +30,29 @@ cd adaptive-ai-quiz-vector
 python -m venv venv
 source venv/bin/activate    # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+
+
+### 2. Run the API
+uvicorn main:app --reload
+
+Server will be live at → http://127.0.0.1:8000
+Interactive docs → http://127.0.0.1:8000/docs
+
+### 3. Ingest a PDF
+
+Using Swagger UI (recommended for testing):
+
+1.Go to http://127.0.0.1:8000/docs
+2.POST /ingest
+3.Enter doc_id → e.g., physics_101
+4.Upload your PDF
+
+```bash
+curl -X POST "http://127.0.0.1:8000/ingest" \
+  -F "doc_id=quantum_mechanics" \
+  -F "file=@./textbook.pdf"
+
+
+### 4. Search (Test the RAG)
+```bash
+curl "http://127.0.0.1:8000/search?query=Explain quantum entanglement"
