@@ -1,4 +1,4 @@
-# Adaptive AI Quiz Generator (RAG + PDF Ingestion Pipeline)
+# RAG + PDF Ingestion Pipeline
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-success)](https://fastapi.tiangolo.com/)
